@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Report</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+        <form action = "http://158.108.226.116:5000/submit/{{username}}" method = "post">
+            Hi,{{username}}
+            <p>
+                    <select name="tc" id="type_clime">
+                        <option value="Facebook"> Facebook </option>
+                        <option value="Line"> Line </option>
+                        <option value="Phone"> Phone </option>
+                        <option value="Email"> Email </option>
+                    </select>
+            
+            
+                <select name="case" id="case">
+                    <option value="Hacking_to_modify_or_steal_or_destroy Data">Hacking to modify / steal / destroy Data</option>
+                    <option value="Selling_products_or_Services_scam">Selling products / Services scam </option>
+                    <option value="Fake_to_others">Fake to others</option>
+                    <option value="Scam_to_transfer_money">Scam to transfer money</option>
+                    <option value="Email_scam">Email scam</option>
+                    <option value="Romance_scam">Romance scam</option>
+                    <option value="Blackmail">Blackmail</option>
+                    <option value="Defamation">Defamation</option>
+                </select>
+                <p>ID</p>
+                <input type="text" name="id" id="id">
+                <p>Other</p>
+                <input type="text" name="other" id="other">
+                <p>Upload Image</p>
+                <input type="file" name="image" id="image">
+            </p>
+            <p><input type = "submit" value = "submit" />
+         </form>
+
+    
+</body>
+</html>
